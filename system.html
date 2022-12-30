@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sidebar 03</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper d-flex align-items-stretch" style="height: 100vh">
+      <nav id="sidebar" class="active">
+        <div class="custom-menu">
+          <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Toggle Menu</span>
+          </button>
+        </div>
+        <div class="p-4">
+          <h1><a href="index.html" class="logo">Flash</a></h1>
+          <ul class="list-unstyled components mb-5">
+            <li >
+              <a href="index.html"><span class="fa fa-home mr-3"></span> Acceuil</a>
+            </li>
+            <li>
+              <a href="data.html">
+                <span class="fa fa-sticky-note mr-3"></span> Données</a
+              >
+            </li>
+            <li class="active">
+              <a href="#"><span class="fa fa-gear mr-3"></span> Systéme</a>
+            </li>
+
+            <li>
+              <a href="#"
+                ><span class="fa fa-briefcase mr-3"></span> Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="#"><span class="fa fa-sticky-note mr-3"></span> Blog</a>
+            </li>
+            <li>
+              <a href="#"
+                ><span class="fa fa-paper-plane mr-3"></span> Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Page Content  -->
+      <div class="container">
+        <div style="margin-top: 30px">
+          <div class="row justify-content-between">
+            <div class="col-4 text-left">
+              <h5 style="color: rgb(21, 21, 168)">Time and date :</h5>
+              <h4
+                id="p1"
+                style="
+                  border-style: groove;
+                  width: fit-content;
+                  border-color: blue;
+                "
+              ></h4>
+            </div>
+
+         
+            <div class="col-4 text-right">
+              <a href="login.html">
+                <img
+                  src="./images/istockphoto-1018739074-612x612.jpg"
+                  alt="logout"
+                  width="50px"
+                  height="50px"
+              /></a>
+            </div>
+
+
+
+
+          </div>
+
+</div>
+<section class="section about-section gray-bg" id="about">
+  <div class="container">
+      <div class="row align-items-center flex-row-reverse">
+          <div class="col-lg-6">
+              <div class="about-text go-to">
+                  <h3 style="color: rgb(21, 21, 168)">Profil</h3>
+                  <h6 class="theme-color lead">A Lead UX &amp; UI designer based in Canada</h6>
+                  <p>I <mark>design and develop</mark> services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores. My passion is to design digital user experiences through the bold interface and meaningful interactions.</p>
+                  <div class="row about-list">
+                      <div class="col-md-6">
+                          <div class="media">
+                              <label>Birthday</label>
+                              <p>4th april 1998</p>
+                          </div>
+                          <div class="media">
+                              <label>Age</label>
+                              <p>22 Yr</p>
+                          </div>
+                          <div class="media">
+                              <label>Residence</label>
+                              <p>Canada</p>
+                          </div>
+                          <div class="media">
+                              <label>Address</label>
+                              <p>California, USA</p>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="media">
+                              <label>E-mail</label>
+                              <p>info@domain.com</p>
+                          </div>
+                          <div class="media">
+                              <label>Phone</label>
+                              <p>820-885-3321</p>
+                          </div>
+                          <div class="media">
+                              <label>Skype</label>
+                              <p>skype.0404</p>
+                          </div>
+                          <div class="media">
+                              <label>Freelance</label>
+                              <p>Available</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6">
+              <div class="about-avatar">
+                  <img src="https://bootdey.com/img/Content/avatar/avatar7.png" title="" alt="">
+              </div>
+          </div>
+      </div>
+      
+  </div>
+</section>
+</div>
+
+
+    <script>
+      function updateDate() {
+        var date = new Date();
+        var current_date =
+          date.getFullYear() +
+          "-" +
+          (date.getMonth() + 1) +
+          "-" +
+          date.getDate();
+        var current_time =
+          date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+        var date_time = current_date + " " + current_time;
+        document.getElementById("p1").innerHTML = date_time;
+      }
+
+      setInterval(() => {
+        updateDate();
+      }, 1000);
+    </script>
+  
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
