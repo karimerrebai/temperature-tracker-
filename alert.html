@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sidebar 03</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+#one{
+  height: 200px;
+}
+
+
+
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      td, th {
+        border: 2px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #ed0c0c;
+      }
+      </style>
+  </head>
+
+  <body>
+    <div class="wrapper d-flex align-items-stretch" style="height: 100vh">
+      <nav id="sidebar" class="active">
+        <div class="custom-menu">
+          <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Toggle Menu</span>
+          </button>
+        </div>
+        <div class="p-4">
+          <h1><a href="index.html" class="logo">Flash</a></h1>
+          <ul class="list-unstyled components mb-5">
+            <li >
+              <a href="index.html"><span class="fa fa-home mr-3"></span> Acceuil</a>
+            </li>
+            <li>
+              <a href="data.html">
+                <span class="fa fa-sticky-note mr-3"></span> Données</a
+              >
+            </li>
+            <li >
+              <a href="profil.html"><span class="fa fa-user mr-3"></span> Profil</a>
+            </li>
+
+            <li>
+              <a href="systeme.html"><span class="fa fa-gear mr-3"></span> Systéme</a>
+            </li>
+            <li class="active">
+              <a href="alert.html"><span class="fa fa-exclamation-triangle  mr-3"></span> Alertes</a>
+            </li>  
+            <li>
+              <a href="contact.html"
+                ><span class="fa fa-paper-plane mr-3"></span> Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Page Content  -->
+      <div class="container">
+        <div style="margin-top: 30px">
+          <div class="row justify-content-between">
+            <div class="col-4 text-left">
+              <h5 style="color: rgb(21, 21, 168)">Time and date :</h5>
+              <h4
+                id="p1"
+                style="
+                  border-style: groove;
+                  width: fit-content;
+                  border-color: blue;
+                "
+              ></h4>
+            </div>
+
+         
+            <div class="col-4 text-right ">
+              <a href="login.html">
+                <img
+                  src="./images/istockphoto-1018739074-612x612.jpg"
+                  alt="logout"
+                  width="50px"
+                  height="50px"
+              /></a>
+            </div>
+          </div>
+
+
+<div class="row justify-content-center">
+
+<div class="col-6">
+
+  <table style="margin-top: 50px;">
+    <tr>
+      <th> Date</th>
+      <th>Heure</th>
+      <th>Temperature</th>
+      <th>  Hygrométrie</th>
+      <th>Message</th>
+    </tr>
+    <tr>
+      <td>Row 1, Cell 1</td>
+      <td>Row 1, Cell 2</td>
+      <td>Row 1, Cell 3</td>
+      <td>Row 1, Cell 4</td>
+      <td>Row 1, Cell 5</td>
+    </tr>
+    <tr>
+      <td>Row 2, Cell 1</td>
+      <td>Row 2, Cell 2</td>
+      <td>Row 2, Cell 3</td>
+      <td>Row 2, Cell 4</td>
+      <td>Row 2, Cell 5</td>
+    </tr>
+    <tr>
+      <td>Row 3, Cell 1</td>
+      <td>Row 3, Cell 2</td>
+      <td>Row 3, Cell 3</td>
+      <td>Row 3, Cell 4</td>
+      <td>Row 3, Cell 5</td>
+    </tr>
+    <tr>
+      <td>Row 4, Cell 1</td>
+      <td>Row 4, Cell 2</td>
+      <td>Row 4, Cell 3</td>
+      <td>Row 4, Cell 4</td>
+      <td>Row 4, Cell 5</td>
+    </tr>
+    <tr>
+      <td>Row 5, Cell 1</td>
+      <td>Row 5, Cell 2</td>
+      <td>Row 5, Cell 3</td>
+      <td>Row 5, Cell 4</td>
+      <td>Row 5, Cell 5</td>
+    </tr>
+  </table>
+  
+  
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</div> 
+
+
+<div class="row justify-content-between " id="one">
+
+<div class="col-6 text-left align-self-center">
+<h1>helo</h1>
+</div>
+<div class="col-6 text-right align-self-center">
+<h1>hello</h1>
+</div>
+
+</div>
+
+</div>
+
+
+
+
+    <script>
+      function updateDate() {
+        var date = new Date();
+        var current_date =
+          date.getFullYear() +
+          "-" +
+          (date.getMonth() + 1) +
+          "-" +
+          date.getDate();
+        var current_time =
+          date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+        var date_time = current_date + " " + current_time;
+        document.getElementById("p1").innerHTML = date_time;
+      }
+
+      setInterval(() => {
+        updateDate();
+      }, 1000);
+    </script>
+  
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
