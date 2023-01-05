@@ -1,263 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Sidebar 03</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
-      rel="stylesheet"
-    />
+<head>
+  <title>Sidebar 03</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
 
-    <style>
-      .panel{
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        border-radius: 8px;
-      }
-.panel-heading {
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
-  padding: 15px;
-  
-  color: rgb(21, 21, 168);
-  font-size: 14px;
-  font-weight: bold;
-}
+  <style>
+    .panel {
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      border-radius: 8px;
+    }
 
-.tools a:hover {
-  background:  rgb(21, 21, 168);
-  color: #fff;
-}
+    .panel-heading {
+      border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
+      padding: 15px;
 
-.tools a {
-  background: #E3E4E8;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  color: #858582;
-  float: left;
-  margin-left: 3px;
-  padding: 10px;
-  text-decoration: none;
-}
+      color: rgb(21, 21, 168);
+      font-size: 14px;
+      font-weight: bold;
+    }
 
-ul.goal-progress {
-  list-style-type: none;
-  padding: 0;
-}
+    .tools a:hover {
+      background: rgb(21, 21, 168);
+      color: #fff;
+    }
 
-ul.goal-progress li {
-  display: inline-block;
-  width: 100%;
-  border-bottom: 1px dashed #dcdcdc;
-  margin-bottom: 15px;
-  padding-bottom: 15px;
-}
+    .tools a {
+      background: #E3E4E8;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      color: #858582;
+      float: left;
+      margin-left: 3px;
+      padding: 10px;
+      text-decoration: none;
+    }
 
-ul.goal-progress li .prog-avatar {
-  width: 40px;
-  height: 40px;
-  float: left;
-  margin-right: 25px;
-}
+    ul.goal-progress {
+      list-style-type: none;
+      padding: 0;
+    }
 
-ul.goal-progress li .prog-avatar img {
-  width: 100%;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-}
+    ul.goal-progress li {
+    padding-left: 1rem;
+      display: inline-block;
+      width: 100%;
+      border-bottom: 1px dashed #dcdcdc;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+    }
 
-.progress-bar {
-  box-shadow: none;
-  line-height: 15px;
-  text-align: right;
-  padding-right: 10px;
-  font-size: 11px;
-}
-#image-panel-footer{
-  margin: 0;
- 
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
+    ul.goal-progress li .prog-avatar {
+      width: 40px;
+      height: 40px;
+      float: left;
+      margin-right: 25px;
+    }
 
+    ul.goal-progress li .prog-avatar img {
+      width: 100%;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+    }
 
-    </style>
-  </head>
+    .progress-bar {
+      box-shadow: none;
+      line-height: 15px;
+      text-align: right;
+      padding-right: 10px;
+      font-size: 11px;
+    }
+
+    #image-panel-footer {
+      margin: 0;
+
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  </style>
+</head>
 
 
 
 
 
-  <body>
-    <div class="wrapper d-flex align-items-stretch" style="height: 100vh">
-      <nav  id="sidebar" class="active ">
-        <div class="custom-menu ">
-          <button type="button" id="sidebarCollapse" class="btn btn-primary">
-            <i class="fa fa-bars"></i>
-            <span class="sr-only">Toggle Menu</span>
-          </button>
-        </div>
-        <div class="p-4">
-          <h1><a href="index.html" class="logo">Turtle</a></h1>
-          <ul class="list-unstyled components mb-5">
-            <li class="active">
-              <a href="#"><span class="fa fa-home mr-3"></span> Acceuil</a>
-            </li>
-            <li>
-              <a href="data.html">
-                <span class="fa fa-sticky-note mr-3"></span> Données</a
-              >
-            </li>
-            <li>
-              <a href="profil.html"><span class="fa fa-user mr-3"></span> Profil</a>
-            </li>
-            <li>
-              <a href="systeme.html"><span class="fa fa-gear mr-3"></span> Système</a>
-            </li>
+<body>
+  <div class="wrapper d-flex align-items-stretch" style="height: 100vh">
+    <nav id="sidebar" class="active ">
+      <div class="custom-menu ">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+          <i class="fa fa-bars"></i>
+          <span class="sr-only">Toggle Menu</span>
+        </button>
+      </div>
+      <div class="p-4">
+        <h1><a href="index.html" class="logo">Turtle</a></h1>
+        <ul class="list-unstyled components mb-5">
+          <li class="active">
+            <a href="#"><span class="fa fa-home mr-3"></span> Acceuil</a>
+          </li>
+          <li>
+            <a href="data.html">
+              <span class="fa fa-sticky-note mr-3"></span> Données</a>
+          </li>
+          <li>
+            <a href="profil.html"><span class="fa fa-user mr-3"></span> Profil</a>
+          </li>
+          <li>
+            <a href="systeme.html"><span class="fa fa-gear mr-3"></span> Système</a>
+          </li>
 
-            <li>
-              <a href="alert.html"><span class="fa fa-exclamation-triangle  mr-3"></span> Alertes</a>
-            </li>  
-            <li>
-              <a href="contact.html"
-                ><span class="fa fa-paper-plane mr-3"></span> Contact</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
+          <li>
+            <a href="alert.html"><span class="fa fa-exclamation-triangle  mr-3"></span> Alertes</a>
+          </li>
+          <li>
+            <a href="contact.html"><span class="fa fa-paper-plane mr-3"></span> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-      <!-- Page Content  -->
-      <div class="container">
-        <div style="margin-top: 30px">
-          <div class="row justify-content-between">
-            <div class="col-6 text-left">
-              <h5 style="color: rgb(21, 21, 168)">Date et l'heure :</h5>
-              <h4
-                id="p1"
-                style="
+    <!-- Page Content  -->
+            
+            <div class="container-fluid" style="background-color:  #dde5f4;">
+    <div class="container" >
+      <div style="margin-top: 30px">
+        <div class="row justify-content-between">
+          <div class="col-6 text-left">
+            <h5 style="color: rgb(21, 21, 168);">Date et l'heure :</h5>
+            <h4 id="p1" style="
                   border-style: groove;
                   width: fit-content;
                   border-color: blue;
-                "
-              ></h4>
+                "></h4>
+          </div>
+          <div class="col-4 text-right align-self-end">
+            <a href="login.html">
+              <img src="./images/istockphoto-1018739074-612x612.jpg" alt="logout" width="50px" height="50px" /></a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="container w-75 text-center my-4">
+        <h3 style="color: rgb(48, 50, 52); font-weight: bold; font-size: 40px;">Bienvenue chez vous!</h3>
+      </div>
+
+
+
+
+      <div class="row" style="margin-top: 130px;" >
+
+        <div class="col d-flex justify-content-start">
+
+          <div style="width: 100%; height: 100%; " id="wwo-weather-widget-3"></div>
+          <script type='text/javascript'
+            src='https://www.worldweatheronline.com/widget/v5/weather-widget.ashx?loc=802599&wid=3&tu=1&div=wwo-weather-widget-3'
+            async></script><noscript><a href="https://www.worldweatheronline.com/orleans-weather/centre/fr.aspx"
+              alt="Hour by hour Orleans, Centre weather">Orleans, Centre weather forecast hourly</a></noscript>
+
+        </div>
+
+        <div class="col-md-6 d-flex justify-content-center ">
+          <div style="width: 280px;   background-color: #f1f7fe;" class="panel">
+            <header class="panel-heading text-center">
+              Membres
+              <span class="tools pull-right">
+                <a href="#" class="fa fa-chevron-down"></a>
+                <a href="#" class="fa fa-times"></a>
+              </span>
+            </header>
+            <div class="panel-body">
+              <ul class="goal-progress">
+                <li style="padding-top:10px ;">
+                  <div class="prog-avatar">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+                  </div>
+                  <div class="details ">
+                    <div class="title">
+                      <a href="#">John Doe</a>
+                    </div>
+                    <div class="text-start">
+                      <p> proffeseur </p>
+
+                    </div>
+
+
+                  </div>
+                </li>
+                <li>
+                  <div class="prog-avatar">
+                    <img src="images/saif_benjazia.jpg" alt="">
+                  </div>
+                  <div class="details">
+                    <div class="title">
+                      <a href="#">Saif ben jazia</a>
+                    </div>
+
+                    <div class="text-start">
+                      <p> etudiant </p>
+
+                    </div>
+
+                  </div>
+                </li>
+                <li>
+                  <div class="prog-avatar">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="">
+                  </div>
+                  <div class="details">
+                    <div class="title">
+                      <a href="#">Hoffman Doe</a>
+                    </div>
+
+                    <div class="text-start">
+                      <p> etudiante </p>
+
+                    </div>
+
+                  </div>
+                </li>
+
+              </ul>
+              <div class="panel-footer text-center " style="height: 30px; ">
+                <img id="image-panel-footer" style="  height: 80px;" src="img/Turtlehomes.svg "
+                  alt="triangle with all three sides equal" height="200" />
+              </div>
             </div>
-            <div class="col-4 text-right ">
-              <a href="login.html">
-                <img
-                  src="./images/istockphoto-1018739074-612x612.jpg"
-                  alt="logout"
-                  width="50px"
-                  height="50px"
-              /></a>
-            </div>
+
           </div>
         </div>
 
-       
-
-        <div class="container w-75 text-center my-4"
-        >
-          <h3 style="color: rgb(48, 50, 52); font-weight: bold;">Bienvenue chez vous!</h3>
-        </div>
-
-
-
-    
-    <div class="row">
-       
-        <div class="col d-flex justify-content-start">
-
-                <div  style ="width: 100%; height: 80%;" id="wwo-weather-widget-3"></div><script type='text/javascript' src='https://www.worldweatheronline.com/widget/v5/weather-widget.ashx?loc=802599&wid=3&tu=1&div=wwo-weather-widget-3' async></script><noscript><a href="https://www.worldweatheronline.com/orleans-weather/centre/fr.aspx" alt="Hour by hour Orleans, Centre weather">Orleans, Centre weather forecast hourly</a></noscript>
-        
-        
-          
-
-
-
-
-        </div>
-        
-          <div   class="col-md-6 d-flex justify-content-center ">
-            <div style="width: 280px;" class="panel">
-                <header class="panel-heading text-center">
-                  Membres
-                    <span class="tools pull-right">
-                        <a href="#" class="fa fa-chevron-down"></a>
-                        <a href="#" class="fa fa-times"></a>
-                     </span>
-                </header>
-                <div class="panel-body">
-                    <ul class="goal-progress">
-                        <li >
-                            <div class="prog-avatar">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
-                            </div>
-                            <div class="details ">
-                                <div class="title" >
-                                    <a href="#">John Doe</a> 
-                                </div>
-                                <div class="text-start">
-                                  <p> proffeseur </p>
-
-                                </div>
-
-
-                            </div>
-                        </li>
-                        <li>
-                            <div class="prog-avatar">
-                                <img src="images/saif_benjazia.jpg" alt="">
-                            </div>
-                            <div class="details">
-                                <div class="title">
-                                    <a href="#">Saif ben jazia</a>
-                                </div>
-                                
-                                <div class="text-start">
-                                  <p> etudiant </p>
-
-                                </div>
-
-                            </div>
-                        </li>
-                        <li>
-                            <div class="prog-avatar">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="">
-                            </div>
-                            <div class="details">
-                                <div class="title">
-                                    <a href="#">Hoffman Doe</a>
-                                </div>
-                              
-                                <div class="text-start">
-                                  <p> etudiante </p>
-
-                                </div>
-
-                            </div>
-                        </li>
-                      
-                    </ul>
-                 <div  class="panel-footer text-center " style="height: 30px; ">
-                  <img id="image-panel-footer" style="  height: 80px;" src="img/Turtlehomes.svg " alt="triangle with all three sides equal" height="200"
-                 />
-                 </div>
-                </div>
-              
-            </div>
-        </div>
 
 
 
@@ -268,35 +250,35 @@ ul.goal-progress li .prog-avatar img {
 
 
 
-        
       </div>
+    </div>
 
-  
 
-    <script>
-      function updateDate() {
-        var date = new Date();
-        var current_date =
-          date.getFullYear() +
-          "-" +
-          (date.getMonth() + 1) +
-          "-" +
-          date.getDate();
-        var current_time =
-          date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+      <script>
+        function updateDate() {
+          var date = new Date();
+          var current_date =
+            date.getFullYear() +
+            "-" +
+            (date.getMonth() + 1) +
+            "-" +
+            date.getDate();
+          var current_time =
+            date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
 
-        var date_time = current_date + " " + current_time;
-        document.getElementById("p1").innerHTML = date_time;
-      }
+          var date_time = current_date + " " + current_time;
+          document.getElementById("p1").innerHTML = date_time;
+        }
 
-      setInterval(() => {
-        updateDate();
-      }, 1000);
-    </script>
+        setInterval(() => {
+          updateDate();
+        }, 1000);
+      </script>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/main.js"></script>
+</body>
+
 </html>
